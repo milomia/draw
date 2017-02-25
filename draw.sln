@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "draw", "draw\draw.csproj", "{49D4CF8D-2193-4084-B665-C2863A1B2E52}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5CAEAD57-ABF5-4620-B9E0-644B1FEC822C} = {5CAEAD57-ABF5-4620-B9E0-644B1FEC822C}
+		{587ACFBA-1A74-4A38-98C4-69442ECCB7DC} = {587ACFBA-1A74-4A38-98C4-69442ECCB7DC}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFColorPicker", "..\..\..\..\Downloads\WPFColorPicker\WPFColorPicker\WPFColorPicker\WPFColorPicker.csproj", "{5CAEAD57-ABF5-4620-B9E0-644B1FEC822C}"
 EndProject
