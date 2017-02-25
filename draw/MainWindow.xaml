@@ -1,0 +1,45 @@
+﻿<Window x:Class="draw.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:draw"
+        mc:Ignorable="d"
+        Title="Drawing App" Height="710.849" Width="823.616">
+    <Canvas  Name="paintSurface" MouseDown="Canvas_MouseDown_1" MouseMove="Canvas_MouseMove_1" Margin="27,35,39,40" AutomationProperties.Name="Edit" >
+
+        <Canvas.Background>
+            <SolidColorBrush Color="LightBlue" Opacity="0"/>
+        </Canvas.Background>
+        <Menu x:Name="menu" Height="26" Canvas.Left="19" Canvas.Top="-34" Width="200">
+            <MenuItem Header="File">
+                <MenuItem Header="New" Click="NewItem_Click"/>
+                <MenuItem Header="Open" Click="OpenItem_Click"/>
+                <MenuItem Header="Save" Click="SaveItem_Click"/>
+                <MenuItem Header="Close"/>
+                <MenuItem Header="Exit" Click="OnMenuExit"/>
+            </MenuItem>
+            <MenuItem Header="Edit">
+                <MenuItem Header="Colour" Click="ColourItem_Click"/>
+                <MenuItem Header="Font" Click="FontItem_Click"/>
+            </MenuItem>
+            <MenuItem Header="View"/>
+            <MenuItem Header="Exit" />
+            <MenuItem/>
+            <MenuItem/>
+        </Menu>
+        <DockPanel Height="26" LastChildFill="False" Canvas.Left="6" Canvas.Top="-34" Width="706"/>
+        <Button Content="Right-click me!" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Menu item 1" />
+                    <MenuItem Header="Menu item 2" />
+                    <Separator />
+                    <MenuItem Header="Menu item 3" />
+                </ContextMenu>
+            </Button.ContextMenu>
+        </Button>
+        <TextBox x:Name="textBox_x" Height="37" Canvas.Left="6" TextWrapping="Wrap" Text="TextBox" Canvas.Top="602" Width="213"/>
+        <TextBox x:Name="textBox_y" Height="37" Canvas.Left="100" TextWrapping="Wrap" Text="TextBox" Canvas.Top="602" Width="213"/>
+    </Canvas>
+</Window>

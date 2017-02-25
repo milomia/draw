@@ -1,0 +1,8 @@
+﻿<Window x:Class="WPFColorPickerLib.ColorDialog"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Pick Color" Height="370" 
+      KeyDown="Window_KeyDown"
+      Width="520" 
+      WindowStartupLocation="CenterOwner">
+</Window>
